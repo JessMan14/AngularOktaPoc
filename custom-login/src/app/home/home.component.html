@@ -1,0 +1,10 @@
+<h1 class="ui header">Custom Login Page with Sign In Widget</h1>
+<div *ngIf="!isAuthenticated">
+  <p>If you‘re viewing this page then you have successfully started this Angular application BUT no acess token.</p>
+
+</div>
+
+<div *ngIf="isAuthenticated && userName">
+  <p>{{ userName }} you have validated the token!</p>
+
+</div>
